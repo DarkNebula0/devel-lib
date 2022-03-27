@@ -179,7 +179,7 @@ namespace Utils
 
 
 
-	inline bool CheckName(const char *i_pString, const size_t i_nSize)
+	/*inline bool CheckName(const char *i_pString, const size_t i_nSize)
 	{
 		for (size_t i = 0; i < i_nSize; i++)
 		{
@@ -206,8 +206,7 @@ namespace Utils
 	inline bool CheckName(const std::string &i_sData)
 	{
 		return CheckName(i_sData.c_str(), i_sData.size());
-	}
-
+	}*/
 
 
 	inline bool SearchInStr(const std::string &i_sString, const std::string &i_sToFind, const bool i_fCaseSensetive = true)
