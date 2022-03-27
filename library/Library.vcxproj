@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0A31B6B1-AA02-444C-B969-D93F2C76DA53}</ProjectGuid>
+    <RootNamespace>Library</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)..\MySQL C Connector\include;$(ProjectDir)..\openssl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\MySQL C Connector\x64\lib\debug;$(ProjectDir)..\openssl\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)..\MySQL C Connector\include;$(ProjectDir)..\openssl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\MySQL C Connector\x64\lib;$(ProjectDir)..\openssl\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)..\MySQL C Connector\include;$(ProjectDir)..\openssl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\MySQL C Connector\x86\lib;$(ProjectDir)..\openssl\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)..\MySQL C Connector\include;$(ProjectDir)..\openssl\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\MySQL C Connector\x86\lib\debug;$(ProjectDir)..\openssl\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib;libeay32MDd.lib;ssleay32MDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libmysql.lib;libeay32MDd.lib;ssleay32MDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmysql.lib;libeay32MD.lib;ssleay32MD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmysql.lib;libeay32MD.lib;ssleay32MD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Base64.cpp" />
+    <ClCompile Include="Dir.cpp" />
+    <ClCompile Include="DatabaseDataTypeWrapper.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="JsonDocument.cpp" />
+    <ClCompile Include="JsonObject.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="Plugin.cpp" />
+    <ClCompile Include="PluginManager.cpp" />
+    <ClCompile Include="MySQLDatabase.cpp" />
+    <ClCompile Include="MySQLPreparedQuery.cpp" />
+    <ClCompile Include="MySQLQuery.cpp" />
+    <ClCompile Include="NetworkPeer.cpp" />
+    <ClCompile Include="NetworkSocket.cpp" />
+    <ClCompile Include="NetworkThread.cpp" />
+    <ClCompile Include="ReadStream.cpp" />
+    <ClCompile Include="SecureClient.cpp" />
+    <ClCompile Include="SHA512.cpp" />
+    <ClCompile Include="SimpleWebRequest.cpp" />
+    <ClCompile Include="TCPClient.cpp" />
+    <ClCompile Include="TCPHandler.cpp" />
+    <ClCompile Include="TCPServer.cpp" />
+    <ClCompile Include="TCPSocket.cpp" />
+    <ClCompile Include="TCPTask.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="UDPSocket.cpp" />
+    <ClCompile Include="UrlParser.cpp" />
+    <ClCompile Include="WebFrameBuffer.cpp" />
+    <ClCompile Include="WebRequest.cpp" />
+    <ClCompile Include="WebSocket.cpp" />
+    <ClCompile Include="WriteStream.cpp" />
+    <ClCompile Include="WsaGlobal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="Dir.h" />
+    <ClInclude Include="CharArray.h" />
+    <ClInclude Include="DatabaseColumnMetaData.h" />
+    <ClInclude Include="DatabaseDataTypeWrapper.h" />
+    <ClInclude Include="DatabaseMetaData.h" />
+    <ClInclude Include="DatabaseORM.h" />
+    <ClInclude Include="DatabaseORMGlobal.h" />
+    <ClInclude Include="DatabaseORMGlobalException.h" />
+    <ClInclude Include="DatabaseORMGlobalTypedef.h" />
+    <ClInclude Include="DatabaseORMHelperFunctions.h" />
+    <ClInclude Include="DatabaseORMModel.h" />
+    <ClInclude Include="DatabaseORMQueryBuilder.h" />
+    <ClInclude Include="DatabaseORMTable.h" />
+    <ClInclude Include="DatabaseSerializable.h" />
+    <ClInclude Include="DatabaseSerializableArithmetic.h" />
+    <ClInclude Include="DatabaseSerializableBool.h" />
+    <ClInclude Include="DatabaseSerializableCharArray.h" />
+    <ClInclude Include="DatabaseSerializableORMTable.h" />
+    <ClInclude Include="DatabaseSerializableString.h" />
+    <ClInclude Include="DatabaseSerializer.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="GarbageCollector.h" />
+    <ClInclude Include="GlobalExceptionUtils.h" />
+    <ClInclude Include="GlobalRandomUtils.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="JsonArray.h" />
+    <ClInclude Include="JsonDefines.h" />
+    <ClInclude Include="JsonDocument.h" />
+    <ClInclude Include="JsonObject.h" />
+    <ClInclude Include="JsonSerializableArray.h" />
+    <ClInclude Include="JsonSerializableBool.h" />
+    <ClInclude Include="JsonSerializableNumber.h" />
+    <ClInclude Include="JsonSerializableString.h" />
+    <ClInclude Include="JsonSerializableStruct.h" />
+    <ClInclude Include="JsonSerializableType.h" />
+    <ClInclude Include="JsonSerializer.h" />
+    <ClInclude Include="JsonSerializeTypes.h" />
+    <ClInclude Include="LockGuard.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="Plugin.h" />
+    <ClInclude Include="PluginManager.h" />
+    <ClInclude Include="Mutex.h" />
+    <ClInclude Include="MySQLDatabase.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="MutexVector.h" />
+    <ClInclude Include="MySQLPreparedBind.h" />
+    <ClInclude Include="MySQLPreparedQuery.h" />
+    <ClInclude Include="MySQLQuery.h" />
+    <ClInclude Include="NetworkId.h" />
+    <ClInclude Include="NetworkPeer.h" />
+    <ClInclude Include="NetworkThread.h" />
+    <ClInclude Include="NetworkPacket.h" />
+    <ClInclude Include="NetworkSocket.h" />
+    <ClInclude Include="ObjectData.h" />
+    <ClInclude Include="ReadStream.h" />
+    <ClInclude Include="SafeQueue.h" />
+    <ClInclude Include="SecureClient.h" />
+    <ClInclude Include="SerializableArithmetic.h" />
+    <ClInclude Include="SerializableBool.h" />
+    <ClInclude Include="SerializableCharArray.h" />
+    <ClInclude Include="SerializableData.h" />
+    <ClInclude Include="SerializableDefines.h" />
+    <ClInclude Include="SerializableString.h" />
+    <ClInclude Include="SerializableVector.h" />
+    <ClInclude Include="SerializableWString.h" />
+    <ClInclude Include="Serializer.h" />
+    <ClInclude Include="SerializerStream.h" />
+    <ClInclude Include="SerializerVectorString.h" />
+    <ClInclude Include="SHA512.h" />
+    <ClInclude Include="SimpleWebRequest.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="GlobalStringUtils.h" />
+    <ClInclude Include="StringMatrix.h" />
+    <ClInclude Include="TCPClient.h" />
+    <ClInclude Include="TCPHandler.h" />
+    <ClInclude Include="TCPServer.h" />
+    <ClInclude Include="TCPSocket.h" />
+    <ClInclude Include="TCPTask.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Typedef.h" />
+    <ClInclude Include="UDPSocket.h" />
+    <ClInclude Include="UrlParser.h" />
+    <ClInclude Include="WebFrameBuffer.h" />
+    <ClInclude Include="WebRequest.h" />
+    <ClInclude Include="WebSocket.h" />
+    <ClInclude Include="WriteStream.h" />
+    <ClInclude Include="WsaGlobal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

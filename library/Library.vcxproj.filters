@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{a596e0eb-2e56-4b2a-9555-c164e7efca2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network">
+      <UniqueIdentifier>{fbbfc757-d0b0-4067-bb89-f26eb0b3644e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\TCP">
+      <UniqueIdentifier>{c9787c48-c2f0-41ab-a45f-19d62e57a68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\UDP">
+      <UniqueIdentifier>{04b5ae8f-c8ce-4953-a00a-faa42f0ca546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Socket">
+      <UniqueIdentifier>{cb4b26ba-a0e0-449e-a4ee-e329700ff1d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\TCP\Socket">
+      <UniqueIdentifier>{f14cef36-92de-4e18-9351-de03f34d84e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Packet">
+      <UniqueIdentifier>{7f5e9092-f648-45fe-87f7-f6cf05b65e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\TCP\Server">
+      <UniqueIdentifier>{4024a2e9-841a-4541-a6fd-6341e8699d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\TCP\Client">
+      <UniqueIdentifier>{462ed08b-5335-4bf2-8c4e-1d1cc1c5d746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\UDP\Socket">
+      <UniqueIdentifier>{df51eb83-4605-447c-b723-66d6d4d12a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Thread">
+      <UniqueIdentifier>{125f7ccf-cf69-426a-986c-1fa691997d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Peer">
+      <UniqueIdentifier>{036f8e9f-e534-464b-a67c-5bcaebc631bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Timer">
+      <UniqueIdentifier>{4686eb4a-c6d0-4b7d-8a62-c486a90d6c6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MutexVector">
+      <UniqueIdentifier>{ae20db98-0722-44a5-8ef9-19620a270532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DataStream">
+      <UniqueIdentifier>{a83d6f3a-f496-4ecb-9c3c-77b9a52e0de3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DataStream\ReadStream">
+      <UniqueIdentifier>{b7bbd640-6b97-405d-b269-10074944c913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DataStream\WriteStream">
+      <UniqueIdentifier>{de2de4a3-5bc4-4435-8f21-5d584855954f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL">
+      <UniqueIdentifier>{5fd96bac-f352-4559-8afc-6e08e2152317}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\Query">
+      <UniqueIdentifier>{908090fe-c819-4427-af23-6f5a781ab145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\Prepared">
+      <UniqueIdentifier>{c33bd3de-6346-45ea-8dec-91c7331edf37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\Database">
+      <UniqueIdentifier>{f511056c-50c0-4395-b375-ad3a5c84ff18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Logger">
+      <UniqueIdentifier>{5a7475a1-d590-4d9f-b497-2124aed32d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IniFile">
+      <UniqueIdentifier>{496055f4-a1f9-4ba6-9306-dd48cf5d30fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ThreadPool">
+      <UniqueIdentifier>{c0f2c357-6967-4383-902a-f906b371068d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SafeQueue">
+      <UniqueIdentifier>{e6c91b11-4449-4130-9575-89d400010770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\StringMatrix">
+      <UniqueIdentifier>{af77861a-d637-4310-a231-b5857e8e315d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Cryption">
+      <UniqueIdentifier>{ea104698-a236-45a2-8238-57f15601064f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Cryption\MD5">
+      <UniqueIdentifier>{1e5d769e-b7e4-40f5-ad2d-a54953168c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Cryption\SHA512">
+      <UniqueIdentifier>{ddcfd70b-f75d-4a5f-aec0-62809f9d01c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Web">
+      <UniqueIdentifier>{55df113d-c1d0-4ce6-b08b-069907b593a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Web\Websocket">
+      <UniqueIdentifier>{0f8ba598-1d37-481a-966b-ea7b456242ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Web\UrlParser">
+      <UniqueIdentifier>{fa1ae0cc-80ab-4af8-9cd2-a6aca26bb367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Cryption\Base64">
+      <UniqueIdentifier>{4a882b7d-6da5-4221-a06a-8371e1f10594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Web\SecureClient">
+      <UniqueIdentifier>{fb3a25f3-38d7-4ea6-93a2-36e5d2c76341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Web\WebRequest">
+      <UniqueIdentifier>{6eae3e1b-9964-4a86-915b-63ff527cd998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Web\WebFrameBuffer">
+      <UniqueIdentifier>{1f3ceb1d-9d99-4e29-997d-72db700b20b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Web\SimpleRequest">
+      <UniqueIdentifier>{35e58481-b88a-47d9-97a0-8be4e031fc58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Datatype Wrappers">
+      <UniqueIdentifier>{a0b2401b-16e5-4341-bbc0-1afd625a1902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Datatype Wrappers\CharArray">
+      <UniqueIdentifier>{23110551-499b-41f8-a853-204bdb68659c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Mutex">
+      <UniqueIdentifier>{67f3d2f4-cc95-44b5-a46e-0e91cf5b5b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Mutex\LockGuard">
+      <UniqueIdentifier>{b54bdd77-eed6-4fc9-a796-6601df92cd98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Mutex\Mutex">
+      <UniqueIdentifier>{8630113d-5e25-4969-a5df-b9a547c6920f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Singleton">
+      <UniqueIdentifier>{e7c75db9-7afb-40e0-8b50-0b1cddbe4796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Serialize System">
+      <UniqueIdentifier>{58928bf6-81ab-4044-ba42-7e27dfe45cd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Serialize System\Data">
+      <UniqueIdentifier>{35625c96-0dd9-49ef-9e86-4c6e9bda3942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Serialize System\Defines">
+      <UniqueIdentifier>{07ac922b-a02d-4f5f-a4d4-682ba784c26d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Serialize System\Datatypes">
+      <UniqueIdentifier>{79511847-671e-4bda-99d1-1e649eb348a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Serialize System\Serializer">
+      <UniqueIdentifier>{4a0bcb0c-0e72-4844-a7d8-1441a7604f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Serialize System\Serializer\Stream">
+      <UniqueIdentifier>{6f6ab219-4007-4f31-8bbd-48321987509f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Serialize System\Serializer\VectorString">
+      <UniqueIdentifier>{04fa8f95-55b9-4bb9-a125-d38997b8280e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Global Utils">
+      <UniqueIdentifier>{f08970b4-45ba-4c21-9db8-6680af29fba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ObjectData">
+      <UniqueIdentifier>{45db6923-68f7-40d6-9bdd-c5371ac32b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\Id">
+      <UniqueIdentifier>{2c3840ee-14bc-4ea7-a75f-0eaa311e869d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM">
+      <UniqueIdentifier>{5ac46944-9ad4-4279-84f1-d2b9f3cb1e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\Datatype">
+      <UniqueIdentifier>{e3c2656e-b15b-4de0-9865-d98815ceaddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\Global">
+      <UniqueIdentifier>{6287298e-7840-481e-97e2-e71b078d95e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\Serializer">
+      <UniqueIdentifier>{7ca7e4ec-47f2-45a6-ba60-1a797c766d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\Serializer\Datatypes">
+      <UniqueIdentifier>{effe3b11-ba74-43a6-965b-4aa5c24fef6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\MetaData">
+      <UniqueIdentifier>{a3e12060-ef88-46bf-99ae-1632f88fbc96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\QueryBuilder">
+      <UniqueIdentifier>{400a17b6-ed5c-47e6-950a-bdfa20d319a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\Table">
+      <UniqueIdentifier>{0ed09ec7-5853-4070-92af-c27a9acd6779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\MySQL\ORM\Model">
+      <UniqueIdentifier>{d16a3c92-b84d-477e-a7d9-d21f90228eef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FileSystem">
+      <UniqueIdentifier>{f56a73f1-7fa4-4593-b608-6d477de45d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FileSystem\Dir">
+      <UniqueIdentifier>{f0c97461-cd7e-49dc-a375-bae773be763d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\FileSystem\File">
+      <UniqueIdentifier>{ed6c7f89-15d4-4d1e-9103-835c29d22ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Plugin">
+      <UniqueIdentifier>{b9d17024-35a3-4006-91b2-08a22ed25600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Plugin\Manager">
+      <UniqueIdentifier>{ab3d433b-de57-4c60-af69-ad6f737699d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Plugin\Plugin">
+      <UniqueIdentifier>{2164ea2c-0060-4d36-8931-b2f873f8a6e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Json">
+      <UniqueIdentifier>{47289e45-ee16-4127-9a8a-a0741cbc34d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Json\Object">
+      <UniqueIdentifier>{82b6dcbf-ab76-48db-87eb-473ec8e548b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Json\Array">
+      <UniqueIdentifier>{81942a95-b2d7-4797-b353-ab21e93b578b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Json\Document">
+      <UniqueIdentifier>{608dd819-4823-46c2-b4bc-d552c0849d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Json\Serializer">
+      <UniqueIdentifier>{64798a29-6eff-42bc-9c48-140726f75a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Json\Serializer\Datatypes">
+      <UniqueIdentifier>{f1ec1395-8227-4404-b026-1bd4a6126482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Json\Serializer\JsonType">
+      <UniqueIdentifier>{b717b01c-d995-41d3-b590-79c309aa0636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\TCP\Task">
+      <UniqueIdentifier>{a1a28316-0a61-4ed8-89b3-652d68dadc84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Network\TCP\Handler">
+      <UniqueIdentifier>{09e7affa-bb4d-436c-8198-251fa464c49a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GarbageCollector">
+      <UniqueIdentifier>{2f33f3fd-33bd-4ef5-9d03-00a261b60cec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TCPSocket.cpp">
+      <Filter>Source\Network\TCP\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkSocket.cpp">
+      <Filter>Source\Network\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPSocket.cpp">
+      <Filter>Source\Network\UDP\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPClient.cpp">
+      <Filter>Source\Network\TCP\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkThread.cpp">
+      <Filter>Source\Network\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkPeer.cpp">
+      <Filter>Source\Network\Peer</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadStream.cpp">
+      <Filter>Source\DataStream\ReadStream</Filter>
+    </ClCompile>
+    <ClCompile Include="WriteStream.cpp">
+      <Filter>Source\DataStream\WriteStream</Filter>
+    </ClCompile>
+    <ClCompile Include="MySQLDatabase.cpp">
+      <Filter>Source\MySQL\Database</Filter>
+    </ClCompile>
+    <ClCompile Include="MySQLPreparedQuery.cpp">
+      <Filter>Source\MySQL\Prepared</Filter>
+    </ClCompile>
+    <ClCompile Include="MySQLQuery.cpp">
+      <Filter>Source\MySQL\Query</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile.cpp">
+      <Filter>Source\IniFile</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>Source\ThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>Source\Cryption\MD5</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA512.cpp">
+      <Filter>Source\Cryption\SHA512</Filter>
+    </ClCompile>
+    <ClCompile Include="UrlParser.cpp">
+      <Filter>Source\Network\Web\UrlParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64.cpp">
+      <Filter>Source\Cryption\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="SecureClient.cpp">
+      <Filter>Source\Network\Web\SecureClient</Filter>
+    </ClCompile>
+    <ClCompile Include="WebSocket.cpp">
+      <Filter>Source\Network\Web\Websocket</Filter>
+    </ClCompile>
+    <ClCompile Include="WebRequest.cpp">
+      <Filter>Source\Network\Web\WebRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="WebFrameBuffer.cpp">
+      <Filter>Source\Network\Web\WebFrameBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleWebRequest.cpp">
+      <Filter>Source\Network\Web\SimpleRequest</Filter>
+    </ClCompile>
+    <ClCompile Include="WsaGlobal.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DatabaseDataTypeWrapper.cpp">
+      <Filter>Source\MySQL\ORM\Datatype</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Source\FileSystem\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Dir.cpp">
+      <Filter>Source\FileSystem\Dir</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin.cpp">
+      <Filter>Source\Plugin\Plugin</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginManager.cpp">
+      <Filter>Source\Plugin\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonDocument.cpp">
+      <Filter>Source\Json\Document</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonObject.cpp">
+      <Filter>Source\Json\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPTask.cpp">
+      <Filter>Source\Network\TCP\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPServer.cpp">
+      <Filter>Source\Network\TCP\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPHandler.cpp">
+      <Filter>Source\Network\TCP\Handler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TCPSocket.h">
+      <Filter>Source\Network\TCP\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkPacket.h">
+      <Filter>Source\Network\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkSocket.h">
+      <Filter>Source\Network\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPSocket.h">
+      <Filter>Source\Network\UDP\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPClient.h">
+      <Filter>Source\Network\TCP\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkThread.h">
+      <Filter>Source\Network\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkPeer.h">
+      <Filter>Source\Network\Peer</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Source\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="MutexVector.h">
+      <Filter>Source\MutexVector</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadStream.h">
+      <Filter>Source\DataStream\ReadStream</Filter>
+    </ClInclude>
+    <ClInclude Include="WriteStream.h">
+      <Filter>Source\DataStream\WriteStream</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQLDatabase.h">
+      <Filter>Source\MySQL\Database</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQLPreparedQuery.h">
+      <Filter>Source\MySQL\Prepared</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQLQuery.h">
+      <Filter>Source\MySQL\Query</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Source\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="IniFile.h">
+      <Filter>Source\IniFile</Filter>
+    </ClInclude>
+    <ClInclude Include="MySQLPreparedBind.h">
+      <Filter>Source\MySQL\Prepared</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>Source\ThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeQueue.h">
+      <Filter>Source\SafeQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="StringMatrix.h">
+      <Filter>Source\StringMatrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>Source\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>Source\Cryption\MD5</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA512.h">
+      <Filter>Source\Cryption\SHA512</Filter>
+    </ClInclude>
+    <ClInclude Include="Typedef.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="UrlParser.h">
+      <Filter>Source\Network\Web\UrlParser</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>Source\Cryption\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="SecureClient.h">
+      <Filter>Source\Network\Web\SecureClient</Filter>
+    </ClInclude>
+    <ClInclude Include="WebSocket.h">
+      <Filter>Source\Network\Web\Websocket</Filter>
+    </ClInclude>
+    <ClInclude Include="WebRequest.h">
+      <Filter>Source\Network\Web\WebRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="WebFrameBuffer.h">
+      <Filter>Source\Network\Web\WebFrameBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleWebRequest.h">
+      <Filter>Source\Network\Web\SimpleRequest</Filter>
+    </ClInclude>
+    <ClInclude Include="WsaGlobal.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="CharArray.h">
+      <Filter>Source\Datatype Wrappers\CharArray</Filter>
+    </ClInclude>
+    <ClInclude Include="LockGuard.h">
+      <Filter>Source\Mutex\LockGuard</Filter>
+    </ClInclude>
+    <ClInclude Include="Mutex.h">
+      <Filter>Source\Mutex\Mutex</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializer.h">
+      <Filter>Source\Serialize System</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableData.h">
+      <Filter>Source\Serialize System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableDefines.h">
+      <Filter>Source\Serialize System\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableString.h">
+      <Filter>Source\Serialize System\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableArithmetic.h">
+      <Filter>Source\Serialize System\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableBool.h">
+      <Filter>Source\Serialize System\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableCharArray.h">
+      <Filter>Source\Serialize System\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableWString.h">
+      <Filter>Source\Serialize System\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializerVectorString.h">
+      <Filter>Source\Serialize System\Serializer\VectorString</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializerStream.h">
+      <Filter>Source\Serialize System\Serializer\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalRandomUtils.h">
+      <Filter>Source\Global Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalStringUtils.h">
+      <Filter>Source\Global Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalExceptionUtils.h">
+      <Filter>Source\Global Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectData.h">
+      <Filter>Source\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkId.h">
+      <Filter>Source\Network\Id</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORMGlobal.h">
+      <Filter>Source\MySQL\ORM</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseDataTypeWrapper.h">
+      <Filter>Source\MySQL\ORM\Datatype</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORM.h">
+      <Filter>Source\MySQL\ORM</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORMGlobalException.h">
+      <Filter>Source\MySQL\ORM\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORMGlobalTypedef.h">
+      <Filter>Source\MySQL\ORM\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORMHelperFunctions.h">
+      <Filter>Source\MySQL\ORM\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSerializer.h">
+      <Filter>Source\MySQL\ORM\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSerializable.h">
+      <Filter>Source\MySQL\ORM\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSerializableArithmetic.h">
+      <Filter>Source\MySQL\ORM\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSerializableBool.h">
+      <Filter>Source\MySQL\ORM\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSerializableCharArray.h">
+      <Filter>Source\MySQL\ORM\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSerializableORMTable.h">
+      <Filter>Source\MySQL\ORM\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseSerializableString.h">
+      <Filter>Source\MySQL\ORM\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORMModel.h">
+      <Filter>Source\MySQL\ORM\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseColumnMetaData.h">
+      <Filter>Source\MySQL\ORM\MetaData</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseMetaData.h">
+      <Filter>Source\MySQL\ORM\MetaData</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORMQueryBuilder.h">
+      <Filter>Source\MySQL\ORM\QueryBuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="DatabaseORMTable.h">
+      <Filter>Source\MySQL\ORM\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializableVector.h">
+      <Filter>Source\Serialize System\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Source\FileSystem\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Dir.h">
+      <Filter>Source\FileSystem\Dir</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin.h">
+      <Filter>Source\Plugin\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginManager.h">
+      <Filter>Source\Plugin\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonArray.h">
+      <Filter>Source\Json\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonDocument.h">
+      <Filter>Source\Json\Document</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonObject.h">
+      <Filter>Source\Json\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializer.h">
+      <Filter>Source\Json\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializableArray.h">
+      <Filter>Source\Json\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializableBool.h">
+      <Filter>Source\Json\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializableNumber.h">
+      <Filter>Source\Json\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializableString.h">
+      <Filter>Source\Json\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializableStruct.h">
+      <Filter>Source\Json\Serializer\Datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializableType.h">
+      <Filter>Source\Json\Serializer\JsonType</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonDefines.h">
+      <Filter>Source\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonSerializeTypes.h">
+      <Filter>Source\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPTask.h">
+      <Filter>Source\Network\TCP\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="GarbageCollector.h">
+      <Filter>Source\GarbageCollector</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPServer.h">
+      <Filter>Source\Network\TCP\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPHandler.h">
+      <Filter>Source\Network\TCP\Handler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>Source\Serialize System</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

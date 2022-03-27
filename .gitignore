@@ -1,0 +1,18 @@
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Folders
+**/x64/
+**/.vs/
+**/enc_temp_folder/
+**/external/mysql
+!**/external/mysql/.gitkeep
