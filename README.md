@@ -1,5 +1,19 @@
 ## Devel c++ lib
 
+**This repository is now archived and will no longer be actively maintained.**
+
+A new and improved version of this library is available at a different repository, specifically designed to support Linux. You can find the new repository at the following link:
+
+[https://github.com/DarkNebula0/devel-library](https://github.com/DarkNebula0/devel-library)
+
+Please note that the new repository is a rewrite of the original library and includes enhanced features and Linux compatibility. We encourage you to check it out and contribute to its development.
+
+## Repository Status
+
+This repository is now archived and no longer accepts new pull requests or bug reports. You can still fork the repository and make modifications for your own use.
+
+For any issues related to the new repository, please refer to the README of the new repository at [https://github.com/DarkNebula0/devel-library](https://github.com/DarkNebula0/devel-library).
+
 <br/>
 
     -- It was written only for Windows and x64 in mind --
